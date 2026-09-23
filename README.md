@@ -9,21 +9,21 @@ A premium, fully responsive business landing page for **KRITIKOMENTO** — a lux
 ## 📸 Project Preview
 
 ### Desktop View
-![Desktop Preview](img/screenshots/main_heading_day.png)
+![Desktop Preview](/img/screenshots/main_heading_day.png)
 
-![Desktop Preview](img/screenshots/main_heading_dark.png)
+![Desktop Preview](/img/screenshots/main_heading_dark.png)
 
 ### Shops Section
-![Features Section](img/screenshots/shos_day.png)
+![Features Section](/img/screenshots/shos_day.png)
 
-![Features Section](img/screenshots/shops_dark.png)
+![Features Section](/img/screenshots/shops_dark.png)
 
 ### Others Showcase
-![Shades Showcase](img/screenshots/about_day.png)
+![Shades Showcase](/img/screenshots/about_day.png)
 
-![Shades Showcase](img/screenshots/about_dark.png)
+![Shades Showcase](/img/screenshots/about_dark.png)
 
-![Shades Showcase](img/screenshots/newsletter.png)
+![Shades Showcase](/img/screenshots/newsletter.png)
 
 ---
 

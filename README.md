@@ -23,7 +23,7 @@ A premium, fully responsive business landing page for **KRITIKOMENTO** — a lux
 
 ![Shades Showcase](img/screenshots/about_dark.png)
 
-![Shades Showcase](img/screenshots/newsletter_review.png)
+![Shades Showcase](img/screenshots/newsletter_reviews.png)
 
 ---
 

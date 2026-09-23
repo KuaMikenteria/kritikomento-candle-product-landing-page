@@ -1,6 +1,6 @@
 # KRITIKOMENTO | Velvet Matte Lipstick Landing Page
 
-![KRITIKOMENTO Beauty Banner](assets/images/hero-lipstick.png)
+![KRITIKOMENTO Beauty Banner](img/screenshots/description.png)
 
 A premium, fully responsive business landing page for **KRITIKOMENTO** — a luxury velvet matte lipstick brand. Designed with elegance, smooth animations, responsive layouts, and a seamless user experience across desktop, tablet, and mobile devices.
 
@@ -14,7 +14,7 @@ A premium, fully responsive business landing page for **KRITIKOMENTO** — a lux
 ![Desktop Preview](img/screenshots/main_heading_dark.png)
 
 ### Shops Section
-![Features Section](img/screenshots/shos_day.png)
+![Features Section](img/screenshots/shops_day.png)
 
 ![Features Section](img/screenshots/shops_dark.png)
 
@@ -23,7 +23,7 @@ A premium, fully responsive business landing page for **KRITIKOMENTO** — a lux
 
 ![Shades Showcase](img/screenshots/about_dark.png)
 
-![Shades Showcase](img/screenshots/newsletter.png)
+![Shades Showcase](img/screenshots/newsletter_review.png)
 
 ---
 

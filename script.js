@@ -1,6 +1,6 @@
 /* ==========================================================
    KRITIKOMENTO CANDLE CO. — Main JavaScript
-   Dark/Light Theme · Cart · Newsletter · Dynamic Pages
+   Dark/Light Theme · Cart · Newsletter · Dynamic Pages · Checkout
    ========================================================== */
 
 /* ---------- PRODUCT DATA ---------- */
@@ -225,13 +225,6 @@ const PAGE_CONTENT = {
     content: `<p><strong>Shipping Policy:</strong><br>We offer free standard shipping on all orders over ₱999. Orders are processed within 1-2 business days and typically arrive within 3-5 business days.</p>
               <p><strong>Return Policy:</strong><br>We accept returns within 30 days of delivery for unused, unlit candles in their original packaging. Please contact support@kritikomento.com to initiate a return.</p>`,
   },
-  "candle-care": {
-    title: "Candle Care Guide",
-    content: `<p><strong>1. First Burn Ritual:</strong> Allow the wax to melt all the way to the edges of the jar before blowing it out. This usually takes 2-3 hours and prevents "tunneling."</p>
-              <p><strong>2. Trim the Wick:</strong> Keep your wick trimmed to 1/4 inch before every burn. This ensures a clean, even flame and prevents soot.</p>
-              <p><strong>3. Safety First:</strong> Never leave a burning candle unattended. Keep away from drafts, children, pets, and flammable objects.</p>
-              <p><strong>4. Reuse &amp; Recycle:</strong> Once only 1/2 inch of wax remains, clean out the jar with warm soapy water and repurpose it as a planter or storage container.</p>`,
-  },
   "track-order": {
     title: "Track Your Order",
     content: `<p>Enter your order number and email address below to see the current status of your delivery.</p>
@@ -339,8 +332,8 @@ function openPage(pageKey) {
     contentEl.innerHTML = pageData.content;
 
     viewer.classList.add("open");
-    document.body.style.overflow = "hidden"; // Prevent background scrolling
-    viewer.scrollTop = 0; // Reset scroll to top
+    document.body.style.overflow = "hidden";
+    viewer.scrollTop = 0;
   }
 }
 
@@ -438,8 +431,12 @@ function renderCart() {
   const container = document.getElementById("cartItems");
   const subtotalEl = document.getElementById("cartSubtotal");
   const countEl = document.getElementById("cartCount");
+  const cartFoot = document.querySelector(".cart-foot");
 
   if (!container) return;
+
+  // Ensure the standard cart footer is visible when rendering items
+  if (cartFoot) cartFoot.style.display = "block";
 
   let total = 0;
   let count = 0;
@@ -508,10 +505,87 @@ function openCart() {
 function closeCart() {
   document.getElementById("cartDrawer")?.classList.remove("open");
   document.body.style.overflow = "";
+  // Reset the drawer to standard state after closing
+  setTimeout(() => {
+    renderCart();
+  }, 300);
 }
 
 /* ==========================================================
-   CANDLE CARE GUIDE MODAL (Legacy, kept for Learn More button)
+   SIMULATED CHECKOUT PROCESS
+   ========================================================== */
+function processCheckout() {
+  const checkoutBtn = document.getElementById("checkoutBtn");
+  const cartBody = document.getElementById("cartItems");
+  const cartFoot = document.querySelector(".cart-foot");
+
+  if (cart.length === 0) {
+    showToast("Your cart is empty");
+    return;
+  }
+
+  // 1. Enter Loading State
+  const originalText = checkoutBtn.innerHTML;
+  checkoutBtn.innerHTML = '<span class="spinner"></span> Processing Payment...';
+  checkoutBtn.classList.add("btn-loading");
+  checkoutBtn.disabled = true;
+
+  // 2. Simulate API Call / Payment Gateway (2.5 seconds)
+  setTimeout(() => {
+    // Generate a mock Order ID
+    const orderId = `#KRI-${Math.floor(10000 + Math.random() * 90000)}`;
+
+    // 3. Clear Cart Data
+    cart = [];
+
+    // 4. Render Success View inside the Drawer
+    if (cartBody && cartFoot) {
+      // Hide the standard subtotal/checkout footer
+      cartFoot.style.display = "none";
+
+      // Inject the success content
+      cartBody.innerHTML = `
+        <div class="order-success-state">
+          <div class="success-icon-wrap">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <h3>Order Confirmed!</h3>
+          <p class="success-order-id">Order ID: <strong>${orderId}</strong></p>
+          <p class="success-message">Thank you for your purchase. We've received your order and are preparing it for shipment.</p>
+          <p class="success-subtext">A confirmation email with tracking details has been sent to your inbox.</p>
+          
+          <div class="success-actions">
+            <button class="btn btn-primary" id="continueShoppingBtn">Continue Shopping</button>
+            <button class="btn btn-outline" id="viewOrderBtn" onclick="showToast('Order tracking is for demo purposes.')">View Order Status</button>
+          </div>
+        </div>
+      `;
+
+      // Update header count
+      document.getElementById("cartCount").textContent = "0";
+
+      // 5. Handle "Continue Shopping" click
+      document
+        .getElementById("continueShoppingBtn")
+        ?.addEventListener("click", () => {
+          closeCart();
+        });
+    }
+
+    // 6. Show Success Toast
+    showToast(`Order ${orderId} placed successfully! 🎉`);
+
+    // 7. Reset the checkout button for the next time the cart is opened
+    setTimeout(() => {
+      checkoutBtn.innerHTML = originalText;
+      checkoutBtn.classList.remove("btn-loading");
+      checkoutBtn.disabled = false;
+    }, 1000);
+  }, 2500);
+}
+
+/* ==========================================================
+   CANDLE CARE GUIDE MODAL
    ========================================================== */
 function openCareGuide() {
   document.getElementById("careGuideModal")?.classList.add("open");
@@ -536,7 +610,7 @@ function showToast(msg) {
   toast.classList.add("show");
 
   clearTimeout(toastTimeout);
-  toastTimeout = setTimeout(() => toast.classList.remove("show"), 2400);
+  toastTimeout = setTimeout(() => toast.classList.remove("show"), 3500);
 }
 
 /* ==========================================================
@@ -577,14 +651,10 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("cartClose")?.addEventListener("click", closeCart);
   document.getElementById("cartOverlay")?.addEventListener("click", closeCart);
 
-  // Checkout
-  document.getElementById("checkoutBtn")?.addEventListener("click", () => {
-    if (cart.length === 0) {
-      showToast("Your cart is empty");
-      return;
-    }
-    showToast("Redirecting to secure checkout…");
-  });
+  // Checkout Simulation
+  document
+    .getElementById("checkoutBtn")
+    ?.addEventListener("click", processCheckout);
 
   // Newsletter
   document.getElementById("newsletterForm")?.addEventListener("submit", (e) => {
@@ -610,7 +680,7 @@ document.addEventListener("DOMContentLoaded", () => {
         learnMoreBtn.classList.remove("btn-loading");
         learnMoreBtn.disabled = false;
         openCareGuide();
-      }, 1500); // Reduced time slightly for better UX
+      }, 1500);
     });
   }
 
@@ -630,7 +700,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // ---- DYNAMIC PAGE VIEWER EVENT LISTENERS ----
-  // Attach click event to all footer links with data-page attribute
   document.querySelectorAll(".footer-col a[data-page]").forEach((link) => {
     link.addEventListener("click", (e) => {
       e.preventDefault();

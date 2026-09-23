@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kritikomento Candle Co. — Hand Poured Soy Candles</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/icons/logo_day.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ========== APP CONTAINER ========== -->
+  <div id="appContainer">
+
+    <!-- ========== HEADER ========== -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <a href="#" class="brand-logo">
+          <img src="img/icons/logo_day.png" data-day-src="img/icons/logo_day.png"
+            data-dark-src="img/icons/logo_dark.png" alt="KRITIKOMENTO Candle Co. Logo" class="brand-logo-img theme-img">
+          <div class="brand-text">
+            <span class="brand-name">KRITIKOMENTO</span>
+            <span class="brand-sub">Candle Co.</span>
+          </div>
+        </a>
+
+        <nav class="nav-links" id="desktopNav">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#bestsellers">Shop</a>
+          <a href="#features">Collections</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-btn theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon icon-moon"></i>
+            <i class="fa-solid fa-sun icon-sun"></i>
+          </button>
+
+          <button class="icon-btn cart-icon" id="cartToggle" aria-label="Cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="cart-count" id="cartCount">2</span>
+          </button>
+          <a href="#pricing" class="btn-shop-now">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Nav -->
+      <nav class="mobile-nav" id="mobileNav">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#bestsellers">Shop</a>
+        <a href="#features">Collections</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#pricing" class="mobile-buy">Shop Now – ₱699</a>
+      </nav>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section id="hero" class="hero">
+      <div class="hero-bg-overlay"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-text scroll-reveal">
+          <span class="eyebrow">Hand Poured, Heart Felt</span>
+          <h1>Elevate Every Moment</h1>
+          <p class="lead">
+            Natural soy candles crafted to bring warmth, calm, and understated beauty
+            into your home space.
+          </p>
+          <div class="hero-cta">
+            <a href="#pricing" class="btn btn-primary">Shop All Candles</a>
+            <a href="#features" class="btn btn-outline">Explore Scents</a>
+          </div>
+        </div>
+
+        <div class="hero-candle-wrapper scroll-reveal">
+          <img src="img/candles/hero_day.png" data-day-src="img/candles/hero_day.png"
+            data-dark-src="img/candles/hero_night.png" alt="KRITIKOMENTO Candle Hero" class="hero-candle-img theme-img">
+
+          <div class="hero-overlay">
+            <div class="hero-overlay-left">
+              <p class="hero-tag">Signature Collection</p>
+              <h3>Sandalwood &amp; Warm Amber</h3>
+            </div>
+            <span class="hero-price">₱699</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Value Props -->
+      <div class="container value-props">
+        <div class="value-item scroll-reveal">
+          <i class="fa-solid fa-leaf"></i>
+          <h4>Made with Natural Soy Wax</h4>
+        </div>
+        <div class="value-item scroll-reveal">
+          <i class="fa-solid fa-fire-flame-curved"></i>
+          <h4>Clean Burning &amp; Toxin Free</h4>
+        </div>
+        <div class="value-item scroll-reveal">
+          <i class="fa-solid fa-hand-holding-heart"></i>
+          <h4>Hand Poured in Small Batches</h4>
+        </div>
+        <div class="value-item scroll-reveal">
+          <i class="fa-solid fa-gift"></i>
+          <h4>Beautifully Packaged for Gifting</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="about">
+      <div class="container about-grid">
+        <div class="about-content scroll-reveal">
+          <span class="eyebrow">Our Story</span>
+          <h2>Crafted with Intention,<br><em>Rooted in Nature</em></h2>
+          <p>
+            KRITIKOMENTO Candle Co. was born from a simple desire: to create clean, beautifully scented candles that
+            elevate
+            the everyday. We believe that the flicker of a flame and the warmth of a scent have the power to transform a
+            space.
+          </p>
+          <p>
+            Every candle is hand-poured in small batches, using 100% natural soy wax and lead-free wicks. We infuse our
+            candles with ethically sourced fragrances and pure essential oils, free from parabens and phthalates.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fa-solid fa-seedling"></i>
+              <span>100% Natural Soy Wax</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-hands-holding"></i>
+              <span>Hand-Poured in Small Batches</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-box-open"></i>
+              <span>Eco-Friendly Packaging</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual scroll-reveal">
+          <img src="img/icons/logo_day.png" data-day-src="img/icons/logo_day.png"
+            data-dark-src="img/icons/logo_dark.png" alt="About KRITIKOMENTO Candle Co." class="about-img theme-img">
+          <div class="about-badge">Since 2026</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BEST SELLERS ========== -->
+    <section id="bestsellers" class="bestsellers">
+      <div class="container">
+        <div class="section-heading scroll-reveal">
+          <p class="eyebrow">Our Best Sellers</p>
+          <h2>Find Your Perfect Scent</h2>
+          <div class="heading-divider"></div>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+
+        <div class="view-all-wrap scroll-reveal">
+          <a href="#" class="btn btn-primary">View All Candles</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PRICING / PACKS ========== -->
+    <section id="pricing" class="pricing-section">
+      <div class="container">
+        <div class="section-heading scroll-reveal">
+          <p class="eyebrow">Choose Your Pack</p>
+          <h2>Stock Up &amp; Save</h2>
+          <div class="heading-divider"></div>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- 1 Pack -->
+          <article class="price-card scroll-reveal">
+            <div class="price-content">
+              <h3>1 Candle</h3>
+              <span class="price-amount">₱699</span>
+              <span class="price-note">Perfect to try your new signature scent.</span>
+              <a href="#bestsellers" class="btn btn-outline small-btn">Buy Now</a>
+            </div>
+            <div class="product-display">
+              <img src="img/candles/apple_day.png" data-day-src="img/candles/apple_day.png"
+                data-dark-src="img/candles/apple_dark.png" alt="1 Candle Pack" class="theme-img pack-img">
+            </div>
+          </article>
+
+          <!-- 2 Pack (Popular) -->
+          <article class="price-card popular scroll-reveal">
+            <span class="popular-badge">Most Popular</span>
+            <div class="price-content">
+              <h3>2 Candles</h3>
+              <span class="price-amount">₱1,299</span>
+              <span class="price-note">Save more with your favorite scents.</span>
+              <a href="#bestsellers" class="btn btn-primary small-btn">Buy Now</a>
+            </div>
+            <div class="product-display display-pair">
+              <img src="img/candles/apple_day.png" data-day-src="img/candles/apple_day.png"
+                data-dark-src="img/candles/apple_dark.png" alt="Candle 1" class="theme-img pack-img">
+              <img src="img/candles/lavender_day.png" data-day-src="img/candles/lavender_day.png"
+                data-dark-src="img/candles/lavender_dark.png" alt="Candle 2" class="theme-img pack-img">
+            </div>
+          </article>
+
+          <!-- 3 Pack -->
+          <article class="price-card scroll-reveal">
+            <div class="price-content">
+              <h3>3 Candles</h3>
+              <span class="price-amount">₱1,799</span>
+              <span class="price-note">Complete your collection and save big.</span>
+              <a href="#bestsellers" class="btn btn-outline small-btn">Buy Now</a>
+            </div>
+            <div class="product-display display-trio">
+              <img src="img/candles/apple_day.png" data-day-src="img/candles/apple_day.png"
+                data-dark-src="img/candles/apple_dark.png" alt="Candle 1" class="theme-img pack-img">
+              <img src="img/candles/lavender_day.png" data-day-src="img/candles/lavender_day.png"
+                data-dark-src="img/candles/lavender_dark.png" alt="Candle 2" class="theme-img pack-img">
+              <img src="img/candles/lemon_day.png" data-day-src="img/candles/lemon_day.png"
+                data-dark-src="img/candles/lemon_dark.png" alt="Candle 3" class="theme-img pack-img">
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FEATURES ========== -->
+    <section id="features" class="features">
+      <div class="container features-grid">
+        <div class="feature-visual scroll-reveal">
+          <img src="img/banners/banner_mid_day.png" data-day-src="img/banners/banner_mid_day.png"
+            data-dark-src="img/banners/banner_mid_dark.png" alt="Candle Craftsmanship" class="feature-img theme-img">
+          <div class="feature-badge">100% Natural &amp; Clean</div>
+        </div>
+
+        <div class="feature-content scroll-reveal">
+          <span class="eyebrow">Why You'll Love It</span>
+          <h2>Thoughtfully Made,<br>Naturally Better</h2>
+
+          <ul class="feature-list">
+            <li><i class="fa-solid fa-circle-check"></i><span><strong>100% Natural Soy Wax</strong> for a slow, clean,
+                and smoke-free burn</span></li>
+            <li><i class="fa-solid fa-circle-check"></i><span><strong>Cotton Wick</strong> crafted for a steady, even
+                flame and warm throw</span></li>
+            <li><i class="fa-solid fa-circle-check"></i><span><strong>Free from Parabens &amp; Phthalates</strong> so
+                you breathe pure fragrance</span></li>
+            <li><i class="fa-solid fa-circle-check"></i><span><strong>Long Lasting 40–50 Hour Burn Time</strong> per
+                jar</span></li>
+            <li><i class="fa-solid fa-circle-check"></i><span><strong>Reusable Glass Jars</strong> for an eco-friendly
+                planet choice</span></li>
+          </ul>
+
+          <button class="btn btn-primary" id="learnMoreBtn">Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section id="reviews" class="testimonials">
+      <div class="container">
+        <div class="section-heading scroll-reveal">
+          <p class="eyebrow">What Our Customers Say</p>
+          <h2>Moments They Love</h2>
+          <div class="heading-divider"></div>
+        </div>
+
+        <div class="testimonial-grid">
+          <!-- Reviewer 1 -->
+          <div class="testimonial-card scroll-reveal">
+            <div class="testimonial-rating">
+              <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+              <span class="rating-number">5.0</span>
+            </div>
+            <p class="quote">"The glow, the scent, the whole experience is just perfect."</p>
+            <div class="author">
+              <img src="img/reviewers/reviewer1.png" alt="Megan D.">
+              <div class="author-details">
+                <div class="author-name-row">
+                  <strong>Megan D.</strong>
+                  <span class="verified-badge"><i class="fa-solid fa-circle-check"></i></span>
+                </div>
+                <span class="author-label">Verified Customer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reviewer 2 -->
+          <div class="testimonial-card scroll-reveal">
+            <div class="testimonial-rating">
+              <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+              <span class="rating-number">4.8</span>
+            </div>
+            <p class="quote">"Finally found candles that smell amazing and last long!"</p>
+            <div class="author">
+              <img src="img/reviewers/reviewer2.png" alt="Kevin T.">
+              <div class="author-details">
+                <div class="author-name-row">
+                  <strong>Kerina T.</strong>
+                  <span class="verified-badge"><i class="fa-solid fa-circle-check"></i></span>
+                </div>
+                <span class="author-label">Verified Customer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reviewer 3 -->
+          <div class="testimonial-card scroll-reveal">
+            <div class="testimonial-rating">
+              <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+              <span class="rating-number">4.5</span>
+            </div>
+            <p class="quote">"Beautiful packaging and even better quality."</p>
+            <div class="author">
+              <img src="img/reviewers/reviewer3.png" alt="Sophia L.">
+              <div class="author-details">
+                <div class="author-name-row">
+                  <strong>Sophia L.</strong>
+                  <span class="verified-badge"><i class="fa-solid fa-circle-check"></i></span>
+                </div>
+                <span class="author-label">Verified Customer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reviewer 4 (NEW) -->
+          <div class="testimonial-card scroll-reveal">
+            <div class="testimonial-rating">
+              <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+              <span class="rating-number">4.7</span>
+            </div>
+            <p class="quote">"The Sandalwood & Amber is my new evening ritual. It completely transforms my living room."
+            </p>
+            <div class="author">
+              <img src="img/reviewers/reviewer4.png" alt="Marcus S.">
+              <div class="author-details">
+                <div class="author-name-row">
+                  <strong>Marci S.</strong>
+                  <span class="verified-badge"><i class="fa-solid fa-circle-check"></i></span>
+                </div>
+                <span class="author-label">Verified Customer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== NEWSLETTER / BANNER SECTION ========== -->
+    <section id="newsletterSection" class="newsletter-section">
+      <div class="newsletter-overlay"></div>
+      <div class="container newsletter-content scroll-reveal">
+        <span class="eyebrow">Join the Community</span>
+        <h2>Get 15% Off Your First Order</h2>
+        <p>Subscribe to our newsletter for exclusive offers, candle care tips, and early access to new scents.</p>
+
+        <form id="newsletterForm" class="newsletter-form">
+          <input type="email" id="newsletterEmail" placeholder="Enter your email address" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <div class="section-heading scroll-reveal">
+          <p class="eyebrow">Got Questions?</p>
+          <h2>Frequently Asked Questions</h2>
+          <div class="heading-divider"></div>
+        </div>
+
+        <div class="faq-wrapper">
+          <details class="faq-item scroll-reveal">
+            <summary class="faq-question">
+              <span>How long do KRITIKOMENTO candles burn?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Our 11.5 oz candles burn for approximately 40–50 hours when properly cared for. Always trim the wick to
+                1/4 inch before each burn to maximize burn time.</p>
+            </div>
+          </details>
+
+          <details class="faq-item scroll-reveal">
+            <summary class="faq-question">
+              <span>Are your candles safe for pets?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes! We use 100% natural soy wax and phthalate-free fragrances. However, we always recommend burning
+                candles in a well-ventilated area and keeping them out of reach of curious paws.</p>
+            </div>
+          </details>
+
+          <details class="faq-item scroll-reveal">
+            <summary class="faq-question">
+              <span>What kind of wax do you use?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>We exclusively use 100% natural, renewable soy wax sourced from US farms. It burns cleaner and longer
+                than paraffin wax.</p>
+            </div>
+          </details>
+
+          <details class="faq-item scroll-reveal">
+            <summary class="faq-question">
+              <span>How do I care for my candle?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>On the first burn, allow the wax to melt to the edges of the jar (about 2-3 hours). Trim the wick to
+                1/4 inch before every subsequent burn. Never leave a burning candle unattended.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BUY NOW CTA ========== -->
+    <section class="buy-section">
+      <div class="container buy-container scroll-reveal">
+        <div class="buy-text">
+          <i class="fa-solid fa-fire-flame-curved buy-icon"></i>
+          <div class="buy-text-group">
+            <h2>Ready to elevate your space?</h2>
+            <p>Get your perfect scent today.</p>
+          </div>
+        </div>
+        <a href="#pricing" class="btn btn-primary buy-final-button">Shop Now – ₱699</a>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer id="footer" class="site-footer">
+      <!-- Trust Badges -->
+      <div class="footer-trust-badges">
+        <div class="container trust-grid">
+          <div class="trust-item">
+            <i class="fa-solid fa-truck-fast"></i>
+            <strong>Free Shipping</strong>
+            <span>On orders over ₱999</span>
+          </div>
+          <div class="trust-item">
+            <i class="fa-solid fa-shield-halved"></i>
+            <strong>Secure Payment</strong>
+            <span>100% safe &amp; secure</span>
+          </div>
+          <div class="trust-item">
+            <i class="fa-solid fa-rotate-left"></i>
+            <strong>30-Day Returns</strong>
+            <span>Hassle-free returns</span>
+          </div>
+          <div class="trust-item">
+            <i class="fa-solid fa-leaf"></i>
+            <strong>100% Natural</strong>
+            <span>Clean burning soy wax</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-main">
+        <div class="footer-grid">
+          <div class="footer-brand scroll-reveal">
+            <div class="brand-logo">
+              <img src="img/icons/logo_day.png" data-day-src="img/icons/logo_day.png"
+                data-dark-src="img/icons/logo_dark.png" alt="KRITIKOMENTO Candle Co. Logo"
+                class="brand-logo-img theme-img">
+              <div class="brand-text">
+                <span class="brand-name">KRITIKOMENTO</span>
+                <span class="brand-sub">Candle Co.</span>
+              </div>
+            </div>
+            <p>Simple ingredients. Mindful living. Made to warm your world.</p>
+            <div class="footer-social">
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-col scroll-reveal">
+            <h4>Shop</h4>
+            <ul>
+              <li><a href="#" data-page="all-candles">All Candles</a></li>
+              <li><a href="#" data-page="best-sellers">Best Sellers</a></li>
+              <li><a href="#" data-page="bundle-packs">Bundle Packs</a></li>
+              <li><a href="#" data-page="gift-sets">Gift Sets</a></li>
+              <li><a href="#" data-page="accessories">Accessories</a></li>
+              <li><a href="#" data-page="new-arrivals">New Arrivals</a></li>
+              <li><a href="#" data-page="wax-melts">Wax Melts</a></li>
+              <li><a href="#" data-page="gift-cards">Gift Cards</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col scroll-reveal">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#" data-page="about-us">About Us</a></li>
+              <li><a href="#" data-page="our-ingredients">Our Ingredients</a></li>
+              <li><a href="#" data-page="sustainability">Sustainability</a></li>
+              <li><a href="#" data-page="blog">Blog</a></li>
+              <li><a href="#" data-page="contact-us">Contact Us</a></li>
+              <li><a href="#" data-page="careers">Careers</a></li>
+              <li><a href="#" data-page="wholesale">Wholesale</a></li>
+              <li><a href="#" data-page="affiliate-program">Affiliate Program</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col scroll-reveal">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#" data-page="faq">FAQ</a></li>
+              <li><a href="#" data-page="shipping-returns">Shipping &amp; Returns</a></li>
+              <li><a href="#" data-page="candle-care">Candle Care</a></li>
+              <li><a href="#" data-page="track-order">Track Your Order</a></li>
+              <li><a href="#" data-page="privacy-policy">Privacy Policy</a></li>
+              <li><a href="#" data-page="terms-of-service">Terms of Service</a></li>
+              <li><a href="#" data-page="cookie-policy">Cookie Policy</a></li>
+              <li><a href="#" data-page="help-center">Help Center</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom scroll-reveal">
+          <p>© 2026 KRITIKOMENTO Candle Co. All rights reserved.</p>
+          <div class="payment-icons">
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-brands fa-cc-apple-pay"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- ========== DYNAMIC PAGE VIEWER (For Footer Links) ========== -->
+  <div id="pageViewer" class="page-viewer">
+    <div class="page-viewer-header">
+      <div class="container">
+        <button class="page-back-btn" id="pageBackBtn"><i class="fa-solid fa-arrow-left"></i> Back</button>
+        <h2 id="pageTitle">Page Title</h2>
+      </div>
+    </div>
+    <div class="page-viewer-body">
+      <div class="container" id="pageContent">
+        <!-- Content gets injected here by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== CART DRAWER ========== -->
+  <div id="cartDrawer" class="cart-drawer">
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-panel">
+      <div class="cart-head">
+        <h3>Your Cart</h3>
+        <button id="cartClose" aria-label="Close cart"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="cart-body" id="cartItems"></div>
+
+      <div class="cart-foot">
+        <div class="cart-subtotal">
+          <span>Subtotal</span>
+          <span id="cartSubtotal">₱0</span>
+        </div>
+        <button class="btn btn-primary" id="checkoutBtn">Checkout Now</button>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ========== CANDLE CARE GUIDE MODAL ========== -->
+  <div id="careGuideModal" class="modal">
+    <div class="modal-overlay" onclick="closeCareGuide()"></div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Candle Care Guide</h3>
+        <button class="modal-close" onclick="closeCareGuide()"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>1. First Burn Ritual:</strong> Allow the wax to melt all the way to the edges of the jar before
+          blowing it out. This usually takes 2-3 hours and prevents "tunneling."</p>
+        <p><strong>2. Trim the Wick:</strong> Keep your wick trimmed to 1/4 inch before every burn. This ensures a
+          clean, even flame and prevents soot.</p>
+        <p><strong>3. Safety First:</strong> Never leave a burning candle unattended. Keep away from drafts, children,
+          pets, and flammable objects.</p>
+        <p><strong>4. Reuse &amp; Recycle:</strong> Once only 1/2 inch of wax remains, clean out the jar with warm soapy
+          water and repurpose it as a planter or storage container.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== TOAST ========== -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-fire-flame-curved"></i>
+    <span id="toastMsg">Added to cart!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
